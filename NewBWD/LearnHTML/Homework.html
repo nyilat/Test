@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Lessons</title>
+</head>
+<body>
+    <h1 id="top">HTML Tags,Table and Lists</h1>
+    <br><br>
+    <h2>Paragraph 1</h2>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum ullam voluptates ducimus aperiam labore mollitia veritatis magnam omnis nihil unde? Sint, quo modi. Corporis cumque magni explicabo repellat accusantium est.</p>
+    <br>
+    <h2>Paragraph 2</h2>
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsum laudantium doloribus deserunt facere sapiente temporibus quia ullam laborum, dolore perspiciatis illo fugiat maiores beatae nulla deleniti sunt pariatur dolorum saepe!</p>
+    <br><br><br>
+    <hr>
+    <h2>Photo Section</h2>
+    <div class="row">
+    <div class="column">
+        <img src="./assets/html-5.png" style=width:100%; alt="HTML">
+    </div>
+    <div class="column">
+        <img src="assets/poe.jpg" style="width:100%;" alt="Poe Mame Thar">
+    </div>
+    <div class="column">
+        <img src="./assets/team.svg" style="width: 100%;" alt="Team">
+    </div>
+    </div>
+    <br><br>
+    <hr color="red">
+    <h2>Sound section</h2>
+    <br><br>
+    <div class=rowaudio>
+    <div class=columnaudio>
+        <h4>Piano Sound</h4>
+        <audio src="./assets/Piano.ogg" controls></audio>
+    </div>
+    <div class=columnaudio>
+        <h4>Myanmar Idol Theme song</h4>
+        <audio src="./assets/mmidol_4_song.mp3" controls></audio>
+    </div>
+    </div>
+    <br><hr>
+    <h2>Video section</h2>
+    <br><br>
+    <h4>Apple Watch Showcase</h4>
+    <video src="./assets/apple-watch-5.mp4" width="500" controls></video>
+    <br><br><br><hr style="color: rgb(92, 38, 38);">
+    <br><br>
+    <h2>Shopping list</h2>
+    <br><br>
+    <table style="width: 50%;">
+        <caption>Shopping Item list</caption>
+        <tr>
+            <th>No</th>
+            <th>Name</th>
+            <th>Price</th>
+        </tr>
+        <tr>
+            <td>1</td>
+            <td>Shower</td>
+            <td>3000</td>
+        </tr>
+        <tr>
+            <td>2</td>
+            <td>Tooth paste</td>
+            <td>1200</td>
+        </tr>
+        <tr>
+            <td>3</td>
+            <td>facial foam</td>
+            <td>4000</td>
+        </tr>
+        <tr>
+            <td style="text-align: center;" colspan="2">Total</td>
+            <td>8200</td>
+        </tr>
+    </table>
+    <br><br><hr>
+    <h2>To Do List</h2>
+    <ul>
+        <li>wake up</li>
+        <li>brush teeth</li>
+        <li>wash face</li>
+        <li>toilet</li>
+    </ul>
+    <br><br><hr>
+    <h2>Order List</h2>
+    <ol type="I">
+        <li>အိပ်ရာထ</li>
+        <li>မျက်နှာသစ်</li>
+        <li>သွားတိုက်</li>
+        <li>အိမ်သာတက်</li>
+    </ol>
+    <br><br><hr>
+
+    <h2>Youtube Section</h2><br><br>
+
+    <iframe src="https://mms-it.com" frameborder="12" width="400" height="300"></iframe><br><hr>
+
+    <h2>Location section</h2><br><br>
+
+    <iframe src="https://www.map.google.com" frameborder="10" width="400" height="300"></iframe><br><br> 
+    <a href="#top">Go to top</a><hr>
+    
+    <footer style="text-align: center;"> mmsit &copy;2021 All right reserved </footer>
+    <style>
+        table{
+            border: 2px solid black;
+            border-collapse: collapse;
+            background-color: burlywood;
+        }
+        th{
+            text-align: center;
+            font-weight: bold;
+            border: 2px solid black;
+        }
+        td{
+            text-align: left;
+            border: 2px solid black;
+            border-collapse: collapse;
+        }
+        h1,h2,video,audio{
+            text-align: center;
+        }
+        .row{
+            display: flex;
+        }
+        .column{
+            float: left;
+            width: 33.33%;
+            padding: 5px;
+        }
+        .rowaudio{
+            display: flex;
+        }
+        .columnaudio{
+            float: left;
+            width: 50%;
+            padding: 5px;
+        }
+        li{
+            font-size: 20px;
+        }
+    </style>
+    
+</body>
+</html>

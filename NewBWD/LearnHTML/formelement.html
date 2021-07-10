@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML FORM</title>
+</head>
+<body>
+    <form action="login/php" enctype="multipart/form-data">
+        <label for="fname">Your First Name</label><br>
+        <input type="text" name="fname" id="fname" required><br>
+
+        <label for="lname">Your Last Name</label><br>
+        <input type="text" name="lname" id="lname"><br>
+
+        <label for="email">Email Address</label><br>
+        <input type="email" name="email" id="email" placeholder="example@gmail.com" required><br>
+
+        <label for="phone">Phone Number</label><br>
+        <input type="tel" name="phone" id="phone"
+        placeholder="+959-123-456-789"
+        pattern= "+{0-9}3-{0-9}3-{0-9}3-{0-9}3"><br>
+
+        <label for="password">Password</label><br>
+        <input type="password" name="password" id="password" placeholder="Password"><br>
+
+        <label for="age">Your age</label><br>
+        <input type="number" name="age" id="age"><br>
+
+        <label for="bd">Date of Birth</label><br>
+        <input type="date" name="bd" id="bd"><br>
+
+        <label for="photo">Photo</label><br>
+        <input type="file" name="photo" id="photo" accept="image/*"><br>
+
+        <label for="file">Upload CV(You can upload more than one)</label><br>
+        <input type="file" name="file[]" multiple id="file"><br>
+        <hr width="300" align="left"><br><br>
+
+        <textarea name="text" id="text" cols="30" rows="10" placeholder="Leave Your message here"></textarea>
+        <br><br>
+        <a>Choose your Country</a><br>
+        <select name="country" id="country" >
+            <option value="Myanmar">Myanmar</option>
+            <option value="Thailand">Thailand</option>
+            <option value="China">China</option>
+            <option value="Malaysia">Malaysia</option>
+            <option value="Laos">Laos</option>
+            <option value="Thirilinka">Thirilinka</option>
+            <option value="Singapore">Singapore</option>
+        </select><br><br>
+
+        <label">Gender</label><br>
+        <input type="radio" value="male" id="male" name="gender">
+        <label for="male">Male</label>
+        <input type="radio" value="female" id="female" name="gender">
+        <label for="female">Female</label>
+        <input type="radio" value="other" id="other" name="gender">
+        <label for="other">Other</label><br><br><br>
+
+        <label>Skills</label><br>
+        <input type="checkbox" value="HTML" id="HTML" name="skill"><br>
+        <label for="HTML">HTML</label><br>
+        <input type="checkbox" value="CSS" id="CSS" name="skill"><br>
+        <label for="CSS">CSS</label><br>
+        <input type="checkbox" value="JavaScript" id="JavaScript" name="skill"><br>
+        <label for="JavaScript">JavaScript</label><br>
+        <input type="checkbox" value="Jquery" id="Jquery" name="skill"><br>
+        <label for="Jquery">Jquery</label><br>
+        
+        <button type="submit" name="sumit" value="sumit">Sumit</button>
+        &nbsp; &nbsp;
+        <button type="reset" name="reset" value="reset">Reset</button>
+        <br><br>
+    </form>
+</body>
+</html>
